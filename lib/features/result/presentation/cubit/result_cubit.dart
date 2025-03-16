@@ -86,7 +86,6 @@ class ResultCubit extends Cubit<ResultCubitState> {
       currentDisplayList
           .sort((a, b) => (a.carat ?? 0.0).compareTo(b.carat ?? 0.0));
 
-      /// ✅ Reverse if sorting in descending order
       if (!asc) currentDisplayList = currentDisplayList.reversed.toList();
 
       emit(ResultCubitLoaded(currentDisplayList, selectedDiamonds));
@@ -97,7 +96,7 @@ class ResultCubit extends Cubit<ResultCubitState> {
 
   @override
   Future<void> close() {
-    cartSubscription.cancel(); // Dispose subscription
+    cartSubscription.cancel();
     return super.close();
   }
 }

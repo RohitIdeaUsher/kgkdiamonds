@@ -41,24 +41,6 @@ class _CaratFilterWidgetState extends State<CaratFilterWidget> {
     });
   }
 
-  // void _validateAndApplyFilter() {
-  //   if (_formKey.currentState!.validate()) {
-  //     if (fromCarat == null && toCarat == null) {
-  //       widget.onCaratSelected(null, null); // Pass null when both are empty
-  //     } else if (fromCarat != null && toCarat == null) {
-  //       widget.onCaratSelected(
-  //           fromCarat, maxCarat); // Assume max value for missing "to"
-  //     } else if (fromCarat == null && toCarat != null) {
-  //       widget.onCaratSelected(
-  //           minCarat, toCarat); // Assume min value for missing "from"
-  //     } else if (fromCarat != null &&
-  //         toCarat != null &&
-  //         fromCarat! <= toCarat!) {
-  //       widget.onCaratSelected(fromCarat, toCarat);
-  //     }
-  //   }
-  // }
-
   void _validateAndApplyFilter() {
     if (_formKey.currentState!.validate()) {
       double? from = fromCarat ?? minCarat; // Default to min if null
@@ -98,12 +80,6 @@ class _CaratFilterWidgetState extends State<CaratFilterWidget> {
     if (fromCarat != null && val < fromCarat!) return "Must be ≥ From value";
     return null;
   }
-
-  // void _onFilterChanged() {
-  //   double? from = double.tryParse(widget.fromController.text);
-  //   double? to = double.tryParse(widget.toController.text);
-  //   widget.onCaratSelected(from, to);
-  // }
 
   @override
   void dispose() {
