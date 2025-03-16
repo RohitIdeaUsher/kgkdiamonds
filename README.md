@@ -11,7 +11,7 @@ Below are some screenshots of the app:
 ## Video Demo
 Watch the app in action:
 
-[![Watch the Video]](https://github.com/RohitIdeaUsher/kgkdiamonds/blob/main/assets/screenshots/AppVideo.mp4)
+[![Watch the Video](https://github.com/RohitIdeaUsher/kgkdiamonds/blob/main/assets/screenshots/Page1.png)](https://github.com/RohitIdeaUsher/kgkdiamonds/blob/main/assets/screenshots/AppVideo.mp4)
 
 ## 📜 Project Structure
 This Flutter project follows a clean architecture pattern with well-structured layers for state management and UI components.
