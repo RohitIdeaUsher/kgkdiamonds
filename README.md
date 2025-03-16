@@ -1,0 +1,2 @@
+# kgkdiamonds
+KGK Diamonds App
