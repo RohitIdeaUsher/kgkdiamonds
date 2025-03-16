@@ -13,7 +13,6 @@ Watch the app in action:
 
 [![Watch the Video]](https://github.com/RohitIdeaUsher/kgkdiamonds/blob/main/assets/screenshots/AppVideo.mp4)
 
-
 ## 📜 Project Structure
 This Flutter project follows a clean architecture pattern with well-structured layers for state management and UI components.
 
@@ -75,6 +74,18 @@ lib/
 ✅ Animated blinking UI effect
 ✅ Interactive popups and buttons
 
+## 📌 State Management Logic
+This app uses `flutter_bloc` with Cubit for state management. The key state management components include:
+- `FilterCubit`: Manages filtering logic and state changes.
+- `CartCubit`: Handles adding, removing, and managing items in the cart.
+- `ResultCubit`: Processes filtered data and manages the final display results.
+
+Each Cubit maintains a corresponding `State` class that updates the UI based on business logic.
+
+## 💾 Persistent Storage
+The app uses the `shared_preferences` plugin to store user preferences and settings persistently. Key data stored includes:
+- Cart items for session persistence
+
 ## 🚀 Installation & Setup
 1. Clone the repository:
    ```sh
@@ -98,6 +109,7 @@ lib/
 - Flutter Bloc / Cubit
 - Clean Architecture
 - Dart
+- Shared Preferences
 
 ## 🤝 Contributing
 Pull requests are welcome! If you have suggestions, feel free to open an issue.
